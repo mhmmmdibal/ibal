@@ -200,7 +200,7 @@ class Menu:
 			
 		###----------[ PANEL BIASA ]---------- ###
 		prints(Panel(f"{U2}{self.ip}",padding=(0,30),title=f"{U2}{nama}",subtitle=f"{U2}{self.negara}",style=f"{color_panel}"))
-		prints(Panel(f"""{U2}[{color_text}01{M2}]. crack dari id publiki""",width=80,padding=(0,6),style=f"{color_panel}"))
+		prints(Panel(f"""{M2}[{color_text}01{U2}]. crack dari id publiki""",width=80,padding=(0,6),style=f"{color_panel}"))
 		prints(Panel(f"""{U2}ketik {M2}bot{U2} untuk ke menu bot dan ketik {M2}lain{U2} untuk ke menu lain""",width=80,padding=(0,6),style=f"{color_panel}"))
 		menu = console.input(f" {U2}• {U2}pilih menu : ")
 		
