@@ -173,7 +173,7 @@ class Menu:
 				try:os.remove("data/cookie")
 				except:pass
 				Login().menu_login()
-			else:
+			else: 
 				return nama
 		except ConnectionError:
 			prints(Panel(f"""{M2}koneksi internet kamu bermasalah, silahkan cek koneksi kamu kembali""",width=87,style=f"{color_panel}"))
@@ -201,8 +201,8 @@ class Menu:
 		
 		###----------[ ID PUBLIK ]---------- ###
 		if menu in["1","01"]:
-			prints(Panel(f"""{K2}masukan id target, pastikan id target bersifat publik dan tidak private""",subtitle=f"{K2}ketik {M2}me{K2} untuk dump dari teman sendiri",width=80,style=f"{color_panel}"))
-			user = console.input(f" {M2}• {U2}masukan id atau username : ")
+			prints(Panel(f"""{U2}masukan id target, pastikan id target bersifat publik dan tidak private""",subtitle=f"{K2}ketik {M2}me{K2} untuk dump dari teman sendiri",width=80,style=f"{color_panel}"))
+			user = console.input(f" {U2}• {U2}masukan id atau username : ")
 			if user in["Me","me"]:
 				user = Dump(cookie).GetUser()
 			Dump(cookie).Dump_Publik(f"https://mbasic.facebook.com/{user}?v=friends")
