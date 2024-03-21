@@ -84,15 +84,15 @@ class Logo:
 		self.bersihkan_layar()
 		prints(Panel(f"""{color_text}   
 ⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀   
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀ {U2}   {M2}Jangan takut akan perubahan.
-    ⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇ {U2}   {M2}Kita mungkin kehilangan sesuatu yang baik,
-  ⢤⣀⣀⣀⭕  ⢸⣷ ⭕⣀⣤⣴⣿⣿⣿⣆ {U2} {M2}namun kita akan peroleh sesuatu yang lebih baik lagi {U2}
-     ⠹⠏   ⣿⣧ ⠹⣿⣿⣿⣿⣿⡿⣿ {U2}
+{U2}⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀        {M2}Jangan takut akan perubahan.
+{U2}⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇        {M2}Kita mungkin kehilangan sesuatu yang baik,
+{U2}⢤⣀⣀ ⭕⢸⣷ ⭕⣀⣤⣴⣿⣿⣿⣆      {M2}namun kita akan peroleh sesuatu yang lebih baik lagi {U2}
+     ⠹⠏   ⣿⣧ ⠹⣿⣿⣿⣿⣿⡿⣿ 
           ⠛⠿⠇⢀⣼⣿⣿⠛⢯⡿⡟ 
            ⠦⠴⢿⢿⣿⡿⠷ ⣿   
         ⠙⣷⣶⣶⣤⣤⣤⣤⣤⣶⣦⠃             
         ⢐⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿  
-        ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇        BY:IQBAL
+        ⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇      BY:IQBAL
           ⠙⠻⢿⣿⣿⣿⣿⠟⠁""",width=80,style=f"{color_panel}"))
 	
 	###----------[ BAGIAN LOGIN ]---------- ###
