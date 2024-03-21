@@ -196,13 +196,13 @@ class Menu:
 		###----------[ PANEL BIASA ]---------- ###
 		prints(Panel(f"{U2}{self.ip}",padding=(0,30),title=f"{U2}{nama}",subtitle=f"{U2}{self.negara}",style=f"{color_panel}"))
 		prints(Panel(f"""{U2}[{color_text}01{K2}]. crack dari id publiki""",width=80,padding=(0,6),style=f"{color_panel}"))
-		prints(Panel(f"""{K2}ketik {H2}bot{U2} untuk ke menu bot dan ketik {H2}lain{U2} untuk ke menu lain""",width=80,padding=(0,6),style=f"{color_panel}"))
+		prints(Panel(f"""{U2}ketik {H2}bot{U2} untuk ke menu bot dan ketik {H2}lain{U2} untuk ke menu lain""",width=80,padding=(0,6),style=f"{color_panel}"))
 		menu = console.input(f" {U2}• {U2}pilih menu : ")
 		
 		###----------[ ID PUBLIK ]---------- ###
 		if menu in["1","01"]:
 			prints(Panel(f"""{K2}masukan id target, pastikan id target bersifat publik dan tidak private""",subtitle=f"{K2}ketik {M2}me{K2} untuk dump dari teman sendiri",width=80,style=f"{color_panel}"))
-			user = console.input(f" {M2}• {K2}masukan id atau username : ")
+			user = console.input(f" {M2}• {U2}masukan id atau username : ")
 			if user in["Me","me"]:
 				user = Dump(cookie).GetUser()
 			Dump(cookie).Dump_Publik(f"https://mbasic.facebook.com/{user}?v=friends")
