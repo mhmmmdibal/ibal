@@ -84,9 +84,9 @@ class Logo:
 		self.bersihkan_layar()
 		prints(Panel(f"""{color_text} 
 ⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀   
-    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀       Jangan takut akan perubahan. 
-    ⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇       Kita mungkin kehilangan sesuatu yang baik,
-  ⢤⣀⣀⣀⭕  ⢸⣷ ⭕⣀⣤⣴⣿⣿⣿⣆     namun kita akan peroleh sesuatu yang lebih baik lagi.
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀    Jangan takut akan perubahan. 
+    ⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇    Kita mungkin kehilangan sesuatu yang baik,namun
+  ⢤⣀⣀⣀⭕  ⢸⣷ ⭕⣀⣤⣴⣿⣿⣿⣆  kita akan peroleh sesuatu yang lebih baik lagi.
      ⠹⠏   ⣿⣧ ⠹⣿⣿⣿⣿⣿⡿⣿
           ⠛⠿⠇⢀⣼⣿⣿⠛⢯⡿⡟
            ⠦⠴⢿⢿⣿⡿⠷ ⣿ 
