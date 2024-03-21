@@ -346,7 +346,7 @@ class Crack:
 						fall.submit(self.metode_api,user,pwx)
 					except:
 						fall.submit(self.metode_api,user,pwx)
-		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {M2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
+		prints(Panel(f"""{H2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {M2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
 		sys.exit()
 							
 	###----------[ METODE API ]---------- ###
@@ -506,7 +506,7 @@ class Lain:
 
 	###----------[ MENU ]---------- ###
 	def menu(self):
-		prints(Panel(f"""{U2}[{color_text}01{U2}]. lihat akun hasil crack  t    
+		prints(Panel(f"""{U2}[{color_text}01{U2}]. lihat akun hasil crack      
 [{color_text}02{U2}]. logout ({U2}hapus login{U2})""",width=80,padding=(0,7),style=f"{color_panel}"))
 		menu = console.input(f" {U2}• {U2}pilih menu : ")
 		if menu in["01","1"]:
@@ -525,7 +525,7 @@ class Lain:
 	def cek_hasil(self):
 		prints(Panel(f"""{U2}[{color_text}01{U2}]. lihat akun hasil crack ok
 [{color_text}02{U2}]. lihat akun hasil crack cp""",width=80,padding=(0,20),style=f"{color_panel}"))
-		ask = console.input(f" {M2}• {K2}masukan pilihan : ")
+		ask = console.input(f" {U2}• {U2}masukan pilihan : ")
 		if ask in["1","01"]:folder = "OK"
 		else:folder = "CP"
 		
@@ -605,4 +605,4 @@ if __name__=="__main__":
 	try:os.mkdir("data")
 	except:pass
 	Menu().menu()
-														
+																																			
