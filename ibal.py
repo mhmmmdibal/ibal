@@ -346,7 +346,7 @@ class Crack:
 						fall.submit(self.metode_api,user,pwx)
 					except:
 						fall.submit(self.metode_api,user,pwx)
-		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {U2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
+		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {M2}{len(self.cp)}{U2}""",width=80,padding=(0,8),style=f"{color_panel}"))
 		sys.exit()
 							
 	###----------[ METODE API ]---------- ###
