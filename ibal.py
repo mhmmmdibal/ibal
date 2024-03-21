@@ -107,7 +107,7 @@ class Login:
 	def menu_login(self):
 		Logo().logonya()
 		prints(Panel(f"{H2}\t                            Menu Login",width=87,style=f"{color_panel}"))
-		prints(Panel(f"""{U2}[{color_text}01{U2}]. login menggunakan cookie facebook ( {H2}Recomended{U2} )\n[{color_text}02{U2}]. login menggunakan No dan Password ( {M2}No Recomended{P2} )""",width=87,style=f"{color_panel}"))
+		prints(Panel(f"""{U2}[{color_text}01{U2}]. login menggunakan cookie facebook ( {H2}Recomended{U2} )\n[{color_text}02{U2}]. login menggunakan No dan Password ( {M2}No Recomended{U2} )""",width=87,style=f"{color_panel}"))
 		login = console.input(f" {U2}• {U2}pilih menu : ")
 		if login in["1","01"]:
 			prints(Panel(f"""{U2}silahkan masukan cookiemu disini dan pastikan autentikasi tidak aktif""",width=87,style=f"{color_panel}"))
@@ -346,7 +346,7 @@ class Crack:
 						fall.submit(self.metode_api,user,pwx)
 					except:
 						fall.submit(self.metode_api,user,pwx)
-		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {U2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
+		prints(Panel(f"""{U2}berhasil crack total {len(tampung)} id, dengan hasil OK : {H2}{len(self.ok)}{M2} CP : {M2}{len(self.cp)}{M2}""",width=80,padding=(0,8),style=f"{color_panel}"))
 		sys.exit()
 							
 	###----------[ METODE API ]---------- ###
@@ -390,7 +390,7 @@ class Crack:
 						if "muncul" in self.apk:
 							self.get_apk(user,pw,cookie)
 						else:
-							tree = Tree(Panel.fit(f"""{H2}{user}|{pw}{P2}""",style=f"{color_panel}"),guide_style="bold grey100")
+							tree = Tree(Panel.fit(f"""{H2}{user}|{pw}{U2}""",style=f"{color_panel}"),guide_style="bold grey100")
 							tree.add(Panel(f"{H2}{cookie}{P2}",style=f"{color_panel}"))
 							prints(tree)
 							os.popen('play-audio o.mp3')
@@ -409,7 +409,7 @@ class Crack:
 						open(f"CP/{self.hari_ini}.txt","a").write(f"{user}|{pw}\n")
 						break
 				elif "Calls to this api have exceeded the rate limit. (613)" in post.text:
-					prog.update(des,description=f" {M2}•{K2} crack {M2}spam{P2} {str(self.loop)}/{len(tampung)} OK : {M2}{len(self.ok)}{P2} CP : {K2}{len(self.cp)}{K2}")
+					prog.update(des,description=f" {M2}•{K2} crack {M2}spam{H2} {str(self.loop)}/{len(tampung)} OK : {M2}{len(self.ok)}{P2} CP : {U2}{len(self.cp)}{U2}")
 					prog.advance(des)
 					time.sleep(30)
 				else:continue
@@ -453,7 +453,7 @@ class Crack:
 			aktip.add(f"{U2}tidak ada aplikasi yang terkait")
 		else:
 			for apk in self.aktif:
-				aktip.add(f"{H2}{apk}{K2}")
+				aktip.add(f"{H2}{apk}{U2}")
 				
 		###----------[ APLIKASI KADALUWARSA ]---------- ###
 		kadalu = Tree("Aplikasi Kadaluwarsa",guide_style="bold grey100")
@@ -462,7 +462,7 @@ class Crack:
 			kadalu.add(f"{U2}tidak ada aplikasi yang terkait")
 		else:
 			for apk in self.kadaluwarsa:
-				kadalu.add(f"{M2}{apk}{K2}")
+				kadalu.add(f"{M2}{apk}{U2}")
 			
 		###----------[ PRINT SEMUA ]---------- ###
 		tree = Tree(Panel.fit(f"""{U2}{user}|{pw}{U2}""",style=f"{color_panel}"),guide_style="bold grey100")
@@ -506,10 +506,9 @@ class Lain:
 
 	###----------[ MENU ]---------- ###
 	def menu(self):
-		prints(Panel(f"""{U2}[{color_text}01{U2}]. lihat akun hasil crack  
-[{color_text}02{U2}]. get info akun target    [{color_text}05{U2}]. tampilkan info cookies
-[{color_text}03{U2}]. setting user agent      [{color_text}06{U2}]. logout ({U2}hapus login{U2})""",width=80,padding=(0,7),style=f"{color_panel}"))
-		menu = console.input(f" {H2}• {P2}pilih menu : ")
+		prints(Panel(f"""{U2}[{color_text}01{U2}]. lihat akun hasil crack  t    
+[{color_text}02{U2}]. logout ({U2}hapus login{U2})""",width=80,padding=(0,7),style=f"{color_panel}"))
+		menu = console.input(f" {U2}• {U2}pilih menu : ")
 		if menu in["01","1"]:
 			self.cek_hasil()
 		elif menu in["04","4"]:
@@ -532,7 +531,7 @@ class Lain:
 		
 		###----------[ PILIH FILE ]---------- ###
 		dirs = os.listdir(folder)
-		prints(Panel(f"""{K2} berhasil menemukan {len(dirs)} file hasil crack ok""",width=80,padding=(0,15),style=f"{color_panel}"))
+		prints(Panel(f"""{U2} berhasil menemukan {len(dirs)} file hasil crack ok""",width=80,padding=(0,15),style=f"{color_panel}"))
 		num = 0
 		for fil in dirs:
 			num += 1
@@ -542,7 +541,7 @@ class Lain:
 			self.listfile.append(Panel(f"{U2}{fil}",width=35,title=f"{U2}tanggal",style=f"{color_panel}"))
 			self.listfile.append(Panel(f"{U2}{len(totalakun)} akun",width=28,title=f"{U2}total akun",style=f"{color_panel}"))
 		console.print(Columns(self.listfile))
-		prints(Panel(f"""{K2}kamu hanya perlu memilih dan memasukan nomer dari file crack di atas""",width=80,style=f"{color_panel}"))
+		prints(Panel(f"""{U2}kamu hanya perlu memilih dan memasukan nomer dari file crack di atas""",width=80,style=f"{color_panel}"))
 		result = console.input(f" {U2}• {U2}masukan angka : ")
 		
 		###----------[ MULAI CEK ]---------- ###
@@ -560,10 +559,10 @@ class Lain:
 			tree = Tree(" ",guide_style=f"{color_panel}")
 			if folder=="OK":
 				cookie = akun.split("|")[2]
-				tree.add(f"\r{H2}{user}|{pw}{K2} ")
-				tree.add(Panel(f"{H2}{cookie}{K2}",style=f"{color_panel}"))
+				tree.add(f"\r{H2}{user}|{pw}{U2} ")
+				tree.add(Panel(f"{H2}{cookie}{U2}",style=f"{color_panel}"))
 			else:
-				tree.add(f"\r{M2}{user}|{pw}{K2} ")
+				tree.add(f"\r{M2}{user}|{pw}{U2} ")
 			prints(tree)
 		prints(Panel(f"""{U2} berhasil mengecek dan mendapatkan total {len(totalhasil)} akun dari file""",width=80,padding=(0,7),style=f"{color_panel}"))
 		exit()
@@ -606,4 +605,4 @@ if __name__=="__main__":
 	try:os.mkdir("data")
 	except:pass
 	Menu().menu()
-																																			
+														
