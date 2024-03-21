@@ -87,9 +87,9 @@ class Logo:
                           {M2}██████████████████████[/]
                           {P2}██████████████████████[/]
                           {P2}██████████████████████[/]
-                           Made By {M2}Indonesia {P2}Coder
+                        Made By {M2}Indonesia {P2}Coder
  {U2}╭──────────────────────╮{U2}╭───────────────╮{U2}╭────────────────────────────╮
-{U2}│ {U2}Author : mhmmdibal {U2}│{U2}│ {U2}Version : 3.1 {U2}│{U2}│ {U2}Recode By : IQBAL_Xyz {U2}       │
+ {U2}│ {U2}Author :mhmmdibal{U2}|{U2}│{U2}Version:3.1{u2}|{U2}│{U2}  Recode By : IQBAL_Xyz {U2}│
  {U2}╰──────────────────────╯{U2}╰───────────────╯{U2}╰────────────────────────────╯""",width=80,style=f"{color_panel}"))
 	
 	###----------[ BAGIAN LOGIN ]---------- ###
