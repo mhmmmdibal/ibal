@@ -267,7 +267,7 @@ class Crack:
 		
 	###----------[ ATUR SANDI DAN METODE ]---------- ###
 	def atursandi(self):
-		prints(Panel(f"""{K2}berhasil mengumpulkan {len(tampung)} id""",width=80,padding=(0,21),style=f"{color_panel}"))
+		prints(Panel(f"""{U2}berhasil mengumpulkan {len(tampung)} id""",width=80,padding=(0,21),style=f"{color_panel}"))
 		set = console.input(f" {U2}• {U2}apakah kamu ingin menggunakan sandi manual?(y/n) : ")
 		
 		###----------[ SANDI MANUAL ]---------- ###
@@ -305,7 +305,7 @@ class Crack:
 		sys.exit()
 						
 	###----------[ CRACK OTOMATIS ]---------- ###
-	def otomatis(self):
+	def otomatis(self): 
 		global prog,des
 		prog = Progress(TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'),TimeElapsedColumn())
 		des = prog.add_task('',total=len(tampung))
